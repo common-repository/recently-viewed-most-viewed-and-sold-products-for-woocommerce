@@ -1,0 +1,20 @@
+{
+    "name": "Codexpert/Recently_Viewed_Products_For_Woocommerce",
+    "authors": [
+        {
+            "name": "Codexpert",
+            "email": "hi@codexpert.io"
+        }
+    ],
+    "require": {
+        "codexpert/plugin": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Codexpert\\Recently_Viewed_Products_For_Woocommerce\\" : "classes/",
+            "Codexpert\\Recently_Viewed_Products_For_Woocommerce\\App\\" : "app/",
+            "Codexpert\\Recently_Viewed_Products_For_Woocommerce\\API\\" : "api/"
+        },
+        "files": [ "inc/functions.php" ]
+    }
+}

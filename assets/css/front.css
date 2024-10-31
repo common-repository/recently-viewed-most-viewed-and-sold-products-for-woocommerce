@@ -1,0 +1,108 @@
+#recently-viewed-products-for-woocommerce-modal {
+    position: fixed;
+    background: #c8c8c859;
+    top: 0;
+    border: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#recently-viewed-products-for-woocommerce-modal-loader {
+    position: absolute;
+}
+.rvpm-products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    grid-row-gap: 30px;
+}
+.rvpm-shop-summary-wrap {
+    display: grid;
+}
+.rvpm-shop-summary-wrap a {
+    text-decoration: none;
+}
+.rvpm-shop-summary-wrap .rvpm-woo-product-category {
+    color: #494D55;
+    font-size: .85em;
+    opacity: .6;
+}
+.rvpm-shop-summary-wrap .woocommerce-loop-product__title {
+    font-size: 1em;
+    color: #373737;
+    font-weight: 400;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+.rvpm-shop-summary-wrap .price {
+    color: #494D55;
+    font-size: 13px;
+    font-weight: 700;
+    margin-top: -5px;
+}
+.rvpm-shop-summary-wrap a.add_to_cart_button {
+    background-color: #036FB7;
+    padding: 12px;
+    color: #fff;
+    border-radius: 2px;
+    width: 120px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 15px;
+}
+.rvpm-shop-thumbnail-wrap {
+    position: relative;
+}
+.rvpm-shop-thumbnail-wrap .onsale {
+    position: absolute;
+    right: -5px;
+    top: -10px;
+    background-color: #0372BB;
+    font-size: 12px;
+    color: #fff;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+.rvpm-star-rating .dashicons {
+    font-size: 14px;
+    letter-spacing: 10px;
+    margin-right: -5px;
+}
+/*rvpm-pagination*/
+.rvpm-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 40px 0;
+}
+.rvpm-pagination .page-numbers {
+    text-decoration: none;
+    background-color: #0372BB;
+    color: #fff;
+    padding: 6px 14px;
+    border-radius: 25px;
+    transition: all 0.5s;
+}
+.rvpm-pagination .page-numbers:hover {
+    background-color: #ff6c00;
+}
+.rvpm-pagination .page-numbers.current {
+    background-color: #ff6c00;
+}
+.rvpm-pagination .prev.page-numbers {
+    line-height: 0px;
+}
+.rvpm-pagination .next.page-numbers {
+    line-height: 0px;
+}
+/*rvpm-pagination*/
